@@ -1,0 +1,25 @@
+name = "hide-my-email-cf-worker"
+main = "src/index.js"
+compatibility_date = "2023-03-05"
+
+[vars]
+ENABLE_LOGS = false
+MAIL_PROVIDER = "Mailjet"
+BCC_HIDDEN_SENDER = false
+BCC_ADDRESSES = []
+HIDE_ADDRESSES = ["admin@example.com", "admin2@otherdomain.com"]
+BLOCKED = ["hacker@example.com", "spammer@example.com"]
+FORWARD_TO = "realaddress@example.com"
+# DEFAULT_FROM_NAME = "John Smith"
+CAMPAIGN_NAME = "Hide My Email"
+FORWARD_FROM_CLOUDFLARE = false
+MY_DOMAINS = [
+  "example.com",
+  # "private.com",
+  # "alias.com", 
+]
+DEFAULT_ALIAS = "myfakealias@mydomain.com"
+
+# Create the following secrets with 'wrangler secret put <key>'
+# MAILJET_PUBLIC_KEY
+# MAILJET_SECRET_KEY

@@ -1,0 +1,16 @@
+{
+  "name": "hide-my-email-cf-worker",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.12.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "postal-mime": "^1.0.15"
+  }
+}
